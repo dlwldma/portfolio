@@ -1,0 +1,127 @@
+*{
+    color: white;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Manjari', sans-serif;
+}
+
+body{
+    background: rgb(63,34,65);
+    background: linear-gradient(45deg, rgba(63,34,65,1) 0%, rgba(33,28,56,1) 100%); 
+}
+header{
+    display: flex; 
+    justify-content: center;
+    width: 100%; 
+}
+nav{
+    display: flex; 
+    justify-content: center;
+    width: 60%;
+    margin-top: 10px;
+}
+nav section{
+    display: flex; 
+    width: 50%;
+}
+nav section * {
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav section:nth-child(1){
+    justify-content: start;
+}
+nav section:nth-child(2){
+    justify-content: end;
+    align-items: center;
+}
+main{
+    width: 100%;
+}
+.container{
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    margin: 25px 0;
+}
+.container div {
+    display: flex; 
+    justify-content: space-between;
+    width: 60%; 
+}
+.container div article {
+    width: 40%;
+    height: 450px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.hero-container article:nth-child(1){
+    width: 60%; 
+    background: rgb(8,252,199);
+    background: linear-gradient(321deg, rgba(8,252,199,0.19509810760241597) 0%, rgba(225,43,249,0.20350146894695376) 100%); 
+}
+.hero-container article:nth-child(2){
+    width: 38%; 
+}
+.page-description-container article:nth-child(1){
+    width: 49%; 
+}
+.page-description-container article:nth-child(2){
+    width: 49%; 
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.call-to-action{
+    font-family: 'Manjari', sans-serif;
+    font-weight: 0;
+    font-size: 17px;
+    color: #000000;
+    background-color: #06fcc1;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 10px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.call-to-action:hover{
+    background-color: #000000;
+    color: #06fcc1;
+    border: solid 2px #06fcc1;
+}
+.btn2{
+    font-family: 'Manjari', sans-serif;
+    font-weight: 0;
+    font-size: 17px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 10px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #000000;
+    color: #06fcc1;
+    border: solid 2px #06fcc1;
+}
+.btn-animation:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+}
