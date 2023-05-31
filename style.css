@@ -5,10 +5,15 @@
     box-sizing: border-box;
     font-family: 'Manjari', sans-serif;
 }
+.shadow{
+    -webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.2);
+}
 
 body{
     background: rgb(63,34,65);
-    background: linear-gradient(45deg, rgba(63,34,65,1) 0%, rgba(33,28,56,1) 100%); 
+    background: linear-gradient(150deg, rgba(63,34,65,1) 0%, rgba(33,28,56,1) 100%);  
 }
 header{
     display: flex; 
@@ -53,16 +58,44 @@ main{
 .container div article {
     width: 40%;
     height: 450px;
-    background-color: aqua;
     border-radius: 20px;
 }
+
 .hero-container article:nth-child(1){
+    padding: 5.5rem 4.2rem;
     width: 60%; 
     background: rgb(8,252,199);
-    background: linear-gradient(321deg, rgba(8,252,199,0.19509810760241597) 0%, rgba(225,43,249,0.20350146894695376) 100%); 
+    background: radial-gradient(60% 60% at 95% 88%, rgba(8,252,199,0.19509810760241597) 0%, rgba(225,43,249,0.2007003484987745) 100%); 
 }
 .hero-container article:nth-child(2){
     width: 38%; 
+    background: url('public/main-background.png');
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    color: #0BFFDA;
+    font-size: 1.3rem;
+}
+.hero-container article:nth-child(1) h2 {
+    font-size: 2.85rem;
+    font-weight: 900;
+    color: #0BFFDA;
+}
+.hero-container article:nth-child(1) p {
+    color: white;
+    font-size: 1.4rem;
+}
+.hero-container .button-container {
+    display: flex; 
+    width: 60%;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.hero-container .button-container button{
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
 }
 .page-description-container article:nth-child(1){
     width: 49%; 
@@ -86,7 +119,7 @@ main{
     border: none;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
     border-radius: 10px;
-    transition : 1000ms;
+    transition : 10ms;
     transform: translateY(0);
     display: flex;
     flex-direction: row;
@@ -121,7 +154,47 @@ main{
     border: solid 2px #06fcc1;
 }
 .btn-animation:hover{
-    transition : 1000ms;
+    transition : 400ms;
     padding: 10px 50px;
     transform : translateY(-0px);
+}
+
+.footer{
+    padding: 4rem 4rem;
+    background: rgb(222,224,241);
+    background: linear-gradient(125deg, rgba(222,224,241,1) 0%, rgba(255,255,255,0.6992997882746849) 50%, rgba(248,31,255,1) 100%); 
+}
+.footer h2, p {
+    color: black;
+}
+.footer h2{
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+.footer p{
+    font-size: 1.5rem;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7em 0 0 0;
+}
+.icons-container img{
+    max-height: 35px;
+    max-width: 35px;
+}
+.icons-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    height: 55px;
+    width: 220px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
 }
